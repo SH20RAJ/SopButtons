@@ -8,6 +8,7 @@ for (let i = 0; i < limit; i++) {
   let css = btnjson[i].scopedCss;
 
   let btnhtml = `
+  <div class="center">
    <div class="card ${cls}">
    <center>
       <div class="card-body text-center">
@@ -21,12 +22,13 @@ for (let i = 0; i < limit; i++) {
         
       </div>
       <div class="card-footer">
-      <a href="detail.html?id${i}" class="btn btn-primary">Get</a>
+      <a href="detail.html?id=${i}" class="btn btn-primary">Get</a>
       </div>
     </center>
     </div>
+  </div>
   `;
   buttons.insertAdjacentHTML('beforeend',btnhtml);
 }
 
-
+let getparam = (a,e) => { return e||(e=window.location.href),new URL(e).searchParams.get(a)};
