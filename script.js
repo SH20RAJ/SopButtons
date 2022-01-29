@@ -1,6 +1,6 @@
 var buttons = document.getElementById('buttonscon');
 var btnjson = WebScrapper.fetchjson('https://api.cssbuttons.io/buttons/').buttons;
-var limit = 20;
+var limit = btnjson.length;
 
 for (let i = 0; i < limit; i++) {
   let html = btnjson[i].html;
