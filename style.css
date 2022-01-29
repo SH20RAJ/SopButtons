@@ -7,6 +7,17 @@ pre.language-css {
 pre.language-html {
     height: 500px;
 }
+.preview {
+    padding: 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
 
 #result {
   width: 100%;
