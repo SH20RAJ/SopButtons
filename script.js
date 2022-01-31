@@ -8,13 +8,13 @@ for (let i = 0; i < limit; i++) {
   let css = btnjson[i].scopedCss;
 
   let btnhtml = `
-  <div class="center">
+  <div class="center ">
    <div class="card ${cls}">
    <center>
       <div class="card-body text-center">
       
         <p class="card-text"></p>
-        <div class="playground">
+        <div class="playground card__button-container">
         ${html}
         <style>${css}</style>
         </div>
